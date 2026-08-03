@@ -2,7 +2,7 @@
   "name": "my-first-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Adjababygithub.io/a-blog-app",
+  "homepage": "https://Adjababy.github.io/a-blog-app",
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.19.0",
     "@testing-library/jest-dom": "^5.17.0",

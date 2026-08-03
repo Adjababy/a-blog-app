@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter as Router, Routes, Route} from  'react-router-dom'
+import {HashRouter as Router, Routes, Route} from 'react-router-dom'
  import Posts from './Components/Posts';
 import SinglePost from './Components/SinglePost';
 import Error from './Components/Error';
@@ -12,9 +12,9 @@ function App() {
     <div>
       <Navbar bg="dark" variant="dark">
       <Navbar.Brand className="ms-2" href="/">
-      React Bootstrap
+      Le Journal de Dounamba
       </Navbar.Brand>
-    </Navbar>  
+    </Navbar> 
      <Router>
        <Routes>
          <Route exact path="/" element={<Posts />}/>
