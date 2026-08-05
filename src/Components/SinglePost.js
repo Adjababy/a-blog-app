@@ -4,7 +4,7 @@ import { useParams, Link } from 'react-router-dom'
 import { MainContext } from '../state/MainContext'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import 'bootstrap/dist/css/bootstrap.min.css'
-
+import Comments from './Comments'
 const SinglePost = () => {
   const {contentData, loading, error} = useContext(MainContext)
   const singlePost = contentData[useParams().index]
@@ -51,6 +51,7 @@ const SinglePost = () => {
             )}
             <h1>{singlePost.fields.title}</h1>
             <p>{documentToReactComponents(singlePost.fields.content)}</p>
+            <Comments term={singlePost.sys.id} />
           </Col>
         </Row>
       </Container>
