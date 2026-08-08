@@ -9,8 +9,8 @@
   width: 100%;
   height: 220px;
   object-fit: cover;
+  object-position: left top;
 }
-
 /* Navbar */
 .nav-custom {
   background: var(--color-surface);

@@ -57,6 +57,13 @@ const Posts = () => {
                     </div>
                   )}
                   <div className="post-card-body">
+                    <p className="post-card-date">
+                      {new Date(e.fields.heureDate || e.sys.createdAt).toLocaleDateString('fr-FR', {
+                        day: 'numeric',
+                        month: 'long',
+                        year: 'numeric'
+                      })}
+                    </p>
                     <h3>{e.fields.title}</h3>
                     <span className="post-card-cta">
                       Lire l'article
